@@ -1,11 +1,11 @@
-name: Compile Latex and Release PDF  
+name: Compile Latex and Release PDF
 
 
 on:
   push:
     tags:
       - '*.*.*'
-    
+
 jobs:
   build_latex:
     runs-on: ubuntu-latest
@@ -16,8 +16,8 @@ jobs:
       - name: Compile LaTeX document
         uses: xu-cheng/latex-action@v2
         with:
-          root_file: resume.tex
-  
+          root_file: Samuel_Preston_Resume.tex
+
       - name: Create Release
         id: create_release
         uses: actions/create-release@v1
@@ -30,12 +30,12 @@ jobs:
           prerelease: false
 
       - name: Upload Release Asset
-        id: upload-release-asset 
+        id: upload-release-asset
         uses: actions/upload-release-asset@v1
         env:
           GITHUB_TOKEN: ${{ secrets.TOKEN }}
         with:
-          upload_url: ${{ steps.create_release.outputs.upload_url }} 
-          asset_path: ./resume.pdf
-          asset_name: resume.pdf
+          upload_url: ${{ steps.create_release.outputs.upload_url }}
+          asset_path: ./Samuel_Preston_Resume.pdf
+          asset_name: Samuel_Preston_Resume.pdf
           asset_content_type: pdf
