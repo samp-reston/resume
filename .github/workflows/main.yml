@@ -17,6 +17,13 @@ jobs:
         uses: xu-cheng/latex-action@v2
         with:
           root_file: resume_faangpath.tex
+          
+          
+      - name: Upload PDF file
+        uses: actions/upload-artifact@v3
+        with:
+          name: PDF
+          path: resume.pdf
 
       - name: Create Release
         id: create_release
