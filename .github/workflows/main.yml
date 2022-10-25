@@ -23,7 +23,7 @@ jobs:
         uses: actions/upload-artifact@v3
         with:
           name: PDF
-          path: resume.pdf
+          path: resume_faangpath.pdf
 
       - name: Create Release
         id: create_release
