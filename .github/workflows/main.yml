@@ -12,10 +12,11 @@ jobs:
     steps:
       - name: Set up Git repository
         uses: actions/checkout@v2
+
       - name: Compile LaTeX document
         uses: xu-cheng/latex-action@v2
         with:
-          root_file: main.tex
+          root_file: resume_faangpath.tex
 
       - name: Create Release
         id: create_release
