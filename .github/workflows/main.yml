@@ -16,7 +16,7 @@ jobs:
       - name: Compile LaTeX document
         uses: xu-cheng/latex-action@v2
         with:
-          root_file: resume_faangpath.tex
+          root_file: resume.tex
   
       - name: Create Release
         id: create_release
@@ -36,6 +36,6 @@ jobs:
           GITHUB_TOKEN: ${{ secrets.TOKEN }}
         with:
           upload_url: ${{ steps.create_release.outputs.upload_url }} 
-          asset_path: ./resume_faangpath.pdf
-          asset_name: resume_faangpath.pdf
+          asset_path: ./resume.pdf
+          asset_name: resume.pdf
           asset_content_type: pdf
