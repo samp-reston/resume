@@ -22,6 +22,7 @@ jobs:
         uses: xu-cheng/latex-action@v2
         with:
           root_file: russell/Samuel_Preston_Resume.tex
+          compiler: xelatex
 
       - name: Create Release
         id: create_release
