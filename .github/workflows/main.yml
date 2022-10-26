@@ -21,6 +21,7 @@ jobs:
             ./russell/Samuel_Preston_Resume.tex
           work_in_root_file_dir: true
           extra_fonts: ./russell/fonts/*.ttf
+          args: -pdfxe
 
       - name: Create Release
         id: create_release
