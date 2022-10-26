@@ -35,7 +35,7 @@ jobs:
           prerelease: false
 
       - name: Upload Release Asset
-        id: upload-release-asset
+        id: upload-release-asset_faang
         uses: actions/upload-release-asset@v1
         env:
           GITHUB_TOKEN: ${{ secrets.TOKEN }}
@@ -46,7 +46,7 @@ jobs:
           asset_content_type: pdf
 
       - name: Upload Release Asset
-        id: upload-release-asset
+        id: upload-release-asset_russell
         uses: actions/upload-release-asset@v1
         env:
           GITHUB_TOKEN: ${{ secrets.TOKEN }}
