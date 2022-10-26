@@ -72,7 +72,7 @@
 
 Automated CI/CD of Personal Resume.
 
-Made for ease of making changes using a LaTeX template from FAANGPath. The automated workflow utilising GitHub Actions to compile the LaTeX documents to PDF format, then upload as a new release.
+Made for ease of making changes using a LaTeX template from FAANGPath and the UK's Russell Group of Universities. The automated workflow utilising GitHub Actions to compile the LaTeX documents to PDF format, then upload as a new release. Configuring the repository into compiling two versions of my resume allows for AB testing opportunities through job applications and user downloads from my personal website.
 
 [![LaTeX](https://img.shields.io/badge/Made%20with-LaTeX-1f425f.svg)](https://www.latex-project.org/)
 
