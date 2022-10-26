@@ -16,7 +16,12 @@ jobs:
       - name: Compile LaTeX document
         uses: xu-cheng/latex-action@v2
         with:
-          root_file: Samuel_Preston_Resume.tex
+          root_file: faang/Samuel_Preston_Resume_1.tex
+
+      - name: Compile LaTeX document
+        uses: xu-cheng/latex-action@v2
+        with:
+          root_file: russell/Samuel_Preston_Resume_2.tex
 
       - name: Create Release
         id: create_release
@@ -36,6 +41,17 @@ jobs:
           GITHUB_TOKEN: ${{ secrets.TOKEN }}
         with:
           upload_url: ${{ steps.create_release.outputs.upload_url }}
-          asset_path: ./Samuel_Preston_Resume.pdf
-          asset_name: Samuel_Preston_Resume.pdf
+          asset_path: ./faang/Samuel_Preston_Resume.pdf
+          asset_name: Samuel_Preston_Resume_1.pdf
+          asset_content_type: pdf
+
+      - name: Upload Release Asset
+        id: upload-release-asset
+        uses: actions/upload-release-asset@v1
+        env:
+          GITHUB_TOKEN: ${{ secrets.TOKEN }}
+        with:
+          upload_url: ${{ steps.create_release.outputs.upload_url }}
+          asset_path: ./russell/Samuel_Preston_Resume.pdf
+          asset_name: Samuel_Preston_Resume_2.pdf
           asset_content_type: pdf
