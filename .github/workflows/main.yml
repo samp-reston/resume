@@ -1,5 +1,4 @@
-name: Compile Latex and Release PDF
-
+name: Compile Resume and Release PDFs
 
 on:
   push:
