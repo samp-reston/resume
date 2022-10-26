@@ -16,13 +16,11 @@ jobs:
       - name: Compile LaTeX document
         uses: xu-cheng/latex-action@v2
         with:
-          root_file: faang/Samuel_Preston_Resume.tex
-
-      - name: Compile LaTeX document
-        uses: xu-cheng/latex-action@v2
-        with:
-          root_file: russell/Samuel_Preston_Resume.tex
-          compiler: lualatex
+          root_file: |
+            ./faang/Samuel_Preston_Resume.tex
+            ./russell/Samuel_Preston_Resume.tex
+          work_in_root_file_dir: true
+          extra_fonts: ./russell/fonts/*.ttf
 
       - name: Create Release
         id: create_release
