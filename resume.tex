@@ -1,0 +1,169 @@
+%-------------------------
+% Resume in Latex
+% Author : Jake Gutierrez
+% Based off of: https://github.com/sb2nov/resume
+% License : MIT
+%------------------------
+
+\documentclass[letterpaper,11pt]{article}
+
+\usepackage{latexsym}
+\usepackage[empty]{fullpage}
+\usepackage{titlesec}
+\usepackage{marvosym}
+\usepackage[usenames,dvipsnames]{color}
+\usepackage{verbatim}
+\usepackage{enumitem}
+\usepackage[hidelinks]{hyperref}
+\usepackage{fancyhdr}
+\usepackage[english]{babel}
+\usepackage{tabularx}
+\input{glyphtounicode}
+
+
+%----------FONT OPTIONS----------
+% sans-serif
+% \usepackage[sfdefault]{FiraSans}
+% \usepackage[sfdefault]{roboto}
+% \usepackage[sfdefault]{noto-sans}
+% \usepackage[default]{sourcesanspro}
+
+% serif
+% \usepackage{CormorantGaramond}
+% \usepackage{charter}
+
+
+\pagestyle{fancy}
+\fancyhf{} % clear all header and footer fields
+\fancyfoot{}
+\renewcommand{\headrulewidth}{0pt}
+\renewcommand{\footrulewidth}{0pt}
+
+% Adjust margins
+\addtolength{\oddsidemargin}{-0.5in}
+\addtolength{\evensidemargin}{-0.5in}
+\addtolength{\textwidth}{1in}
+\addtolength{\topmargin}{-.5in}
+\addtolength{\textheight}{1.0in}
+
+\urlstyle{same}
+
+\raggedbottom
+\raggedright
+\setlength{\tabcolsep}{0in}
+
+% Sections formatting
+\titleformat{\section}{
+  \vspace{-4pt}\scshape\raggedright\large
+}{}{0em}{}[\color{black}\titlerule \vspace{-5pt}]
+
+% Ensure that generate pdf is machine readable/ATS parsable
+\pdfgentounicode=1
+
+%-------------------------
+% Custom commands
+\newcommand{\resumeItem}[1]{
+  \item\small{
+    {#1 \vspace{-2pt}}
+  }
+}
+
+\newcommand{\resumeSubheading}[4]{
+  \vspace{-2pt}\item
+    \begin{tabular*}{0.97\textwidth}[t]{l@{\extracolsep{\fill}}r}
+      \textbf{#1} & #2 \\
+      \textit{\small#3} & \textit{\small #4} \\
+    \end{tabular*}\vspace{-7pt}
+}
+
+\newcommand{\resumeSubSubheading}[2]{
+    \item
+    \begin{tabular*}{0.97\textwidth}{l@{\extracolsep{\fill}}r}
+      \textit{\small#1} & \textit{\small #2} \\
+    \end{tabular*}\vspace{-7pt}
+}
+
+\newcommand{\resumeProjectHeading}[2]{
+    \item
+    \begin{tabular*}{0.97\textwidth}{l@{\extracolsep{\fill}}r}
+      \small#1 & #2 \\
+    \end{tabular*}\vspace{-7pt}
+}
+
+\newcommand{\resumeSubItem}[1]{\resumeItem{#1}\vspace{-4pt}}
+
+\renewcommand\labelitemii{$\vcenter{\hbox{\tiny$\bullet$}}$}
+
+\newcommand{\resumeSubHeadingListStart}{\begin{itemize}[leftmargin=0.15in, label={}]}
+\newcommand{\resumeSubHeadingListEnd}{\end{itemize}}
+\newcommand{\resumeItemListStart}{\begin{itemize}}
+\newcommand{\resumeItemListEnd}{\end{itemize}\vspace{-5pt}}
+
+%-------------------------------------------
+%%%%%%  RESUME STARTS HERE  %%%%%%%%%%%%%%%%%%%%%%%%%%%%
+
+
+\begin{document}
+
+\begin{center}
+    \textbf{\Huge \scshape Samuel Preston}
+\end{center}
+
+\begin{center}
+\small 07460945461 $|$
+\href{mailto:samp.reston@outlook.com}{\underline{samp.reston@outlook.com}} $|$
+\href{https://www.linkedin.com/in/samp-reston/}{\underline{linkedin.com/in/samp-reston}} 
+\end{center}
+
+
+%-----------Summary-----------
+\section{Summary}
+  \resumeSubHeadingListStart
+    \resumeItem{Creative, diligent, and pioneering engineer looking for new challenges to solve. After 5+ years in the automotive sector working on in-house software, \textbf{saving £1 million per year}, I leverage modern technologies and advancements as well as actively contributing back into the community. I secured a 2:1 at the \textbf{University of Warwick} while working full time at Jaguar Land Rover, while doing so I was ensuring the \textbf{latest standards} were being adhered to by implementing software configuration tracking across \textbf{£20+ million worth in assets}.}
+  \resumeSubHeadingListEnd
+
+%-----------Technical Experience-----------
+\section{Technical Experience}
+  \resumeSubHeadingListStart
+    \resumeSubheading
+      {Jaguar Land Rover}{Jan 2021 - Present}
+      {Framework Developer}{Warwickshire, UK}
+      \resumeItemListStart
+        \resumeItem{\textbf{Ideated, architected, and lead the development} of in-house software across multiple domains, taking direct customer feedback and iterating on the product. This required communications to \textbf{non-technical stakeholders} throughout the senior management for the local domain.}
+        \resumeItem{Using the regulations for automotive diagnostics, I was able to develop internal tooling based around my own developed \textbf{open-source libraries}. This allowed for the implementation of parallel communication with embedded computers within vehicles with \textbf{Rust}.}
+        \resumeItem{I have \textbf{pioneered} the use of the \textbf{Rust programming language} within JLR, assisting with those \textbf{junior and senior} to understand its benefits and where it can be most valuable within our toolchains. This has already led to the delivery of products of which are able to provide \textbf{£1 million} in savings per year.}
+      \resumeItemListEnd
+    \resumeSubheading
+      {Jaguar Land Rover}{Sep 2018 -- Jan 2021}
+      {Vehicle in the Loop Engineer}{Warwickshire, UK}
+      \resumeItemListStart
+        \resumeItem{\textbf{Lead the delivery} of new capabilities by interfacing with research centers such as \textbf{National Automotive Innovation Center} (NAIC) and JLR Whitley, to implement \textbf{electronics and microcontrollers}.}
+        \resumeItem{Delivered crucial projects to \textbf{remotely control components} within the car to perform \textbf{end-to-end consumer faced testing}. Delivered to department customers}
+        \resumeItem{Provided \textbf{maintenance and process tracking}, as well as led for the \textbf{formalisation of the teams processes} within JLR's documentation store, JLR Way.}
+        \resumeItem{Supported the \textbf{rapid growth} of the team from 2 to 10 testing rigs, ensuring that onsite visitors and contractors were enabled to \textbf{deliver within the time constraints}.}
+      \resumeItemListEnd
+  \resumeSubHeadingListEnd
+%-----------Extracurricular-----------
+\section{Extracurricular}
+  \resumeSubHeadingListStart
+    \resumeSubheading
+      {Open Source Contribution}{April 2024 - Present}
+      {Rust - \href{https://crates.io/crates/doip-definitions}{\underline{DoIP Definitions}} - \href{https://crates.io/crates/doip-codec}{\underline{DoIP Codec}} - \href{https://github.com/rustfoundation/safety-critical-rust-consortium}{\underline{Safety Critical Rust Consortium}}}{}
+      \resumeItemListStart
+      \resumeItem{Developed and maintain libraries to support \textbf{automotive embedded development} with Rust. Utilising common and \textbf{best practices}, I was able to quickly gather \textbf{interest from others} to contribute towards a goal of combined specialisation.}
+      \resumeItem{Supported JLR within the \textbf{Safety Critical Rust Consortium} to ensure JLR is aware of the progress made towards safety critical Rust.}
+      \resumeItemListEnd
+  \resumeSubHeadingListEnd
+  %-----------Education-----------
+\section{Education}
+  \resumeSubHeadingListStart
+    \resumeSubheading
+      {University of Warwick}{Sep. 2020 -- Jul. 2024}
+      {2:1 BEng}{Applied Engineering - Product Creation}
+      \resumeItemListStart
+      \resumeItem{Demonstrated knowledge through research and presentation of product development utilising \textbf{quality assurance techniques} for varying levels of production.}
+      \resumeItem{Generated from \textbf{functional requirements} a production system utilising PLCs and the OpenPLC editor software, including \textbf{flow control} considerations.}
+      \resumeItem{Selectively enhanced my understanding of the \textbf{OSI model} through implementation of an office intranet and internet facilitation using \textbf{CISCO Packet Tracer}. This led to further understanding of Transport Protocol layers specifically TCP.}
+      \resumeItemListEnd
+  \resumeSubHeadingListEnd
+\end{document}
