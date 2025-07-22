@@ -105,15 +105,29 @@
 
 \begin{document}
 
-\begin{center}
-    \textbf{\Huge \scshape Samuel Preston}
-\end{center}
+% Header with two columns
+\begin{tabularx}{\textwidth}{@{}X r@{}}
+  \begin{minipage}[t]{0.65\textwidth}
+    \textbf{\Huge \scshape Samuel Preston} \\[4pt]
+    \small 07460945461 \\
+    \href{mailto:samp.reston@outlook.com}{\underline{samp.reston@outlook.com}} \\
+    \href{https://www.linkedin.com/in/samp-reston/}{\underline{linkedin.com/in/samp-reston}} \\
+  \end{minipage}
+  &
+  \begin{minipage}[t]{0.3\textwidth}
+    \vspace{-1pt}
+    \textbf{Passions} \\[-14pt]  % Add vertical space after title
+    \begin{itemize}[leftmargin=*, itemsep=-2pt] % itemsep adds space between items
+      \item \small Open Source Software
+      \item \small Golf
+      \item \small Tennis
+      \item \small Developer Experience
+    \end{itemize}
+  \end{minipage}
+\end{tabularx}
 
-\begin{center}
-\small 07460945461 $|$
-\href{mailto:samp.reston@outlook.com}{\underline{samp.reston@outlook.com}} $|$
-\href{https://www.linkedin.com/in/samp-reston/}{\underline{linkedin.com/in/samp-reston}} 
-\end{center}
+\vspace{-10pt}
+
 
 
 %-----------Summary-----------
@@ -130,7 +144,7 @@
       {Framework Developer}{Warwickshire, UK}
       \resumeItemListStart
         \resumeItem{\textbf{Ideated, architected, and lead the development} of in-house software across multiple domains, taking direct customer feedback and iterating on the product. This required communications to \textbf{non-technical stakeholders} throughout the senior management for the local domain.}
-        \resumeItem{Using the regulations for automotive diagnostics, I was able to develop internal tooling based around my own developed \textbf{open-source libraries}. This allowed for the implementation of parallel communication with embedded systems within vehicles with \textbf{Rust}, during which I utilised matrix CICD jobs to build the binary for multiple targets and publish these along with generated release notes.}
+        \resumeItem{Using the regulations for automotive diagnostics, I was able to develop internal tooling based around my own developed \textbf{open-source libraries}. This allowed for the implementation of parallel communication with embedded systems within vehicles with \textbf{Rust}, during which I utilised matrix CI/CD jobs to build the binary for multiple targets and publish these along with generated release notes.}
         \resumeItem{I have \textbf{pioneered} the use of the \textbf{Rust programming language} within JLR, assisting with those \textbf{junior and senior} to understand its benefits and where it can be most valuable within our toolchains. This has already led to the delivery of products of which are able to provide \textbf{£1 million} in savings per year.}
       \resumeItemListEnd
     \resumeSubheading
@@ -163,25 +177,15 @@
       \resumeItem{Develop and maintain libraries to support \textbf{automotive embedded development} with Rust. Utilising common and \textbf{best practices}, I was able to quickly gather \textbf{interest from others} to contribute towards a goal of combined specialisation.}
       \resumeItem{Supported JLR within the \textbf{Safety Critical Rust Consortium} to ensure JLR is aware of the progress made towards safety critical Rust, and assessing that JLR explores the latest technologies.}
       \resumeItemListEnd
-  \resumeSubHeadingListEnd
-%-----------Education-----------
-\section{Education}
-  \resumeSubHeadingListStart
+
     \resumeSubheading
-      {University of Warwick}{Sep. 2020 - Jul. 2024}
-      {2:1 BEng}{Applied Engineering - Product Creation}
+      {Coaching and Skills}{}
+      {Learning Development Network}{}
       \resumeItemListStart
-      \resumeItem{Demonstrated knowledge through research and presentation of product development utilising \textbf{quality assurance techniques} for varying levels of production.}
-      \resumeItem{Generated from \textbf{functional requirements} a production system utilising PLCs and the OpenPLC editor software, including \textbf{flow control} considerations.}
-      \resumeItem{Selectively enhanced my understanding of the \textbf{OSI model} through implementation of an office intranet and internet facilitation using \textbf{CISCO Packet Tracer}. This led to further understanding of Transport Protocol layers specifically TCP.}
+      \resumeItem{Signed up for Coaching the Coach, in which I learnt how to give space to colleagues whether junior or senior to open up with some quandry, \textbf{supporting colleagues} to reach a decision using coaching tools and techniques.}
+      \resumeItem{\textbf{Ambitious}, I strive for myself and JLR to always think and assess what can be improved. I exercise this through reaching out to colleagues to communicate ideas and following through to ensure new ideas are heard.}
+      \resumeItem{\textbf{User obsessed}, I make sure the user voices are heard to drive products with certainty of return on investment. This creates an efficiency in which there is products with pure value-added which \textbf{customers love}.}
+      \resumeItem{The culmination of these skills support a sense of  \textbf{unity} within a team and the relationship users have with a team. All-the-while ensuring the team delivers the most  \textbf{impactful products}, maintaining value and personal \textbf{growth} within the squad.}
       \resumeItemListEnd
-    % \resumeSubheading
-    %   {Coaching}{}
-    %   {Learning Development Network}{}
-    %   \resumeItemListStart
-    %   \resumeItem{Demonstrated knowledge through research and presentation of product development utilising \textbf{quality assurance techniques} for varying levels of production.}
-    %   \resumeItem{Generated from \textbf{functional requirements} a production system utilising PLCs and the OpenPLC editor software, including \textbf{flow control} considerations.}
-    %   \resumeItem{Selectively enhanced my understanding of the \textbf{OSI model} through implementation of an office intranet and internet facilitation using \textbf{CISCO Packet Tracer}. This led to further understanding of Transport Protocol layers specifically TCP.}
-    %   \resumeItemListEnd
   \resumeSubHeadingListEnd
 \end{document}
